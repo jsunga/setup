@@ -1,0 +1,73 @@
+.setup-window {
+    height: 620px;
+
+    .header {
+        height: 35px;
+        background-color: #3E4D58;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 3px;
+        padding-left: 10px;
+
+        h4 {
+            font-size: 16px;
+            font-weight: normal;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .content {
+        background-color: #262A2C;
+        height: 100%;
+        overflow: auto;
+
+        .slider-container {
+            max-width: 1782px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+
+            @media (max-width: 1824px) {
+                width: 1620px;
+            }
+
+            @media (max-width: 1658px) {
+                width: 1458px;
+            }
+
+            @media (max-width: 1502px) {
+                width: 1296px;
+            }
+
+            @media (max-width: 1335px) {
+                width: 1134px;
+            }
+
+            @media (max-width: 1172px) {
+                width: 972px;
+            }
+
+            @media (max-width: 1011px) {
+                width: 810px;
+            }
+
+            @media (max-width: 851px) {
+                width: 648px;
+            }
+
+            @media (max-width: 684px) {
+                width: 486px;
+            }
+
+            @media (max-width: 520px) {
+                width: 324px;
+            }
+        }
+    }
+}

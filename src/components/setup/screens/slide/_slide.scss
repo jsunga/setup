@@ -1,0 +1,58 @@
+.slide-on {
+    width: 130px;
+    height: 73px;
+    background-color: #889ACB;
+    margin: 16px;
+
+    .overlay {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        &:hover {
+            background:rgba(0, 0, 0, .5);
+
+            img {
+                opacity: 1;
+            }
+        }
+
+        img {
+            position: absolute;
+            padding: 4px;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.slide-off {
+    width: 130px;
+    height: 73px;
+    background-color: #889ACB;
+    margin: 16px;
+
+    .overlay {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background:rgba(0, 0, 0, .5);
+
+        img {
+            filter: invert(.25);
+            position: absolute;
+            padding: 4px;
+            bottom: 0;
+            right: 0;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
